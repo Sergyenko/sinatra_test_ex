@@ -7,5 +7,6 @@ end
 
 post '/' do
   STORAGE << params
-  redirect '/'
+  erb :thanks
+  #redirect '/'
 end
