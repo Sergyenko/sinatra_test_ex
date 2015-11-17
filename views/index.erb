@@ -1,0 +1,17 @@
+<h1>Welcom to Super Forum</h1>
+
+<form action="/" method="post">
+  Name:
+  <input name="name"></input><br>
+  Comment:
+  <textarea name="text"></textarea><br>
+  <input type="submit"></input>
+</form>
+
+<% STORAGE.each do |post| %>
+  <p>
+    <div>Name:<%= post["name"] %></div>
+    <div>Comment: <%= post["text"] %> </div>
+  </p>
+<% end %>
+
